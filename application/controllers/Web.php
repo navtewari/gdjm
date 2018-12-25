@@ -54,11 +54,24 @@ class Web extends CI_Controller {
         $this->load->view('templates/footer');
     }
 
+    function downloads() {        
+        $data_['pageName'] = 'Downloads';
+        $data_['menu'] = 4;
+        $data_['downloads'] = $this->mm->getDownloads();
+        $this->load->view('templates/header', $data_);
+        $this->load->view('templates/menu', $data_);
+        $this->load->view('templates/banner');
+
+        $this->load->view('downloads', $data_);
+        $this->load->view('templates/footer');
+    }
+
     public function gallery() {
         $data['menu'] = 5;
         $data['gallery_category'] = $this->mm->get_gallery_category();    
         
         $this->load->view('templates/header', $data);
+        $this->load->view('templates/menu', $data);
         $this->load->view('templates/banner');
         $this->load->view('gallery-category',$data);
         $this->load->view('templates/footer');
@@ -68,6 +81,7 @@ class Web extends CI_Controller {
         $data['menu'] = 5;
         $data['gallery'] = $this->mm->get_gallery($id);        
         $this->load->view('templates/header', $data);
+        $this->load->view('templates/menu', $data);
         $this->load->view('templates/banner');
         $this->load->view('gallery',$data);
         $this->load->view('templates/footer');

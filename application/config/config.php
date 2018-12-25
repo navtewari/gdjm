@@ -506,11 +506,9 @@ $config['proxy_ips'] = '';
 /*
 Customized Definitions --------------------->>>>>
 */
-define('_SCHOOL_', "Kids Paradise School, Rudrapur");
-define('_SCHOOL_ABREV_', "KPPS");
+define('_SCHOOL_', "G.D.J.M Senior Sec. School, Chorgalia");
+define('_SCHOOL_ABREV_', "GDJM");
 define('ADMIN___', 'http://localhost/dpanel');
-//define('ADMIN___', $config['base_url'].'/dpanel');
-define('AGIPANEL___', $config['base_url'].'/dpanel');
 /*
 -------------------------------------------->>>>>
 */

@@ -34,6 +34,10 @@ class My_model extends CI_Model {
         return $query->result();
     }
 
+    function getDownloads(){
+        $query = $this->db->get('downloads');
+        return $query->result();
+    }
     function _db_error() {
         //exception handling ------------------
         if ($this->db->trans_status() == FALSE) {

@@ -17,8 +17,8 @@
                                     <div class="logo_container text-center"><div class="trans_400"><a href="#"><img src="<?php echo base_url(). 'assets/images/gdjmLogo.png';?>" alt="" style="max-width: 130px;"></a></div></div>
                                     <div>
                                         <ul class="d-flex flex-row align-items-start justify-content-start">
-                                            <li class="<?php if($menu==4){echo 'active';}?>"><a href="<?php echo site_url().'/web/uc';?>">Downloads</a></li>
-                        <li class="<?php if($menu==4){echo 'active';}?>"><a href="<?php echo site_url().'/web/uc';?>">gallery</a></li>
+                                            <li class="<?php if($menu==4){echo 'active';}?>"><a href="<?php echo site_url().'/web/downloads';?>">Downloads</a></li>
+                        <li class="<?php if($menu==4){echo 'active';}?>"><a href="<?php echo site_url().'/web/gallery';?>">gallery</a></li>
                                             <li class="<?php if($menu==6){echo 'active';}?>"><a href="<?php echo site_url().'/web/contact';?>">contact</a></li>
                                         </ul>
                                     </div>
