@@ -10,7 +10,7 @@
                         </div>                        
                         <div style="margin-top:2em;">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan dolor id enim lacinia, sed feugiat ex suscipit. Nunc molestie malesuada pellentesque. Quisque mattis ante ut nisl tristique ornare. Aenean interdum dictum augue, quis egestas erat lacinia in. Proin dictum commodo nulla ut mattis. Pellentesque vel commodo nisi. Donec eget purus eget ex efficitur tristique. Nulla ut mollis justo.</p>
-                            <div class="button about_button" style="margin-top: 2em;"><a href="#">Read More...</a></div>
+                            <div class="button about_button" style="margin-top: 2em;"><a href="<?php echo site_url('web/about');?>">Read More...</a></div>
                         </div>                        
                     </div>
                 </div>
