@@ -27,7 +27,7 @@
                                         <blockquote>
                                         <b><?php echo $item->SUBJECT;?></b><br> <?php echo $item->NEWS;?>
                                         <?php if($item->PATH_ATTACH != 'x'){?>
-                                                <a href="<?php ADMIN___.'_assets_/downloads/sample.png';?>" style="color:#ffff00; font-size: 11px">Click for detail...</a>
+                                            <a href="<?php ADMIN___.'_assets_/downloads/sample.png';?>" style="color:#ffff00; font-size: 11px">Click for detail...</a>
                                         <?php }?>
                                         </blockquote>
                                     </li>

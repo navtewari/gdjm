@@ -37,30 +37,32 @@
             </div>
             <div class="col-xl-4">
                 <div class="player_content">
-                    <div>
-                        <div class="card card-body bg-light">
-                            <h4><b>RE- ADMISSION</b></h4><br>
-                            <p>Regular absence without leave or unexplained absence for more than six consecutive working days or non payment of school fee renders the student liable to his/her name being struck off from the school rolls. Re - admission may be granted only on the payment of fresh admission fee at the discretion of Principal.</p>
-                        </div>
-                        <br/>
-                        <div class="card card-body bg-light">
-                            <h4><b>WITHDRAWAL</b></h4><br>
-                            <p>A prior one month's notice or school fee in lieu thereof is to be given when the student is to be withdrawn. The school authorities on anyone of the following grounds, can expel a student.</p><br/>
-                            <ul class="list-group"style="margin-left:2em;">
-                                <li class="list-group-item">Irregularity in attendance</li>
-                                <li class="list-group-item">Behaviourial problems</li>
-                                <li class="list-group-item">Non-payment of fees/ School dues.</li>                   
-                            </ul>
-                        </div>
-                        <br/>
-                        <div class="card card-body bg-light">
-                            <h4><b>FEE STRUCTURE</b></h4><br>                
-                            <ul class="list-group"style="margin-left:2em;">
-                                <li class="list-group-item">Tuition & Hostel fee is payable monthly during first 15 days of the month.</li>
-                                <li class="list-group-item">The school accepts fee through cash deposit during first 15 days of month. After that, fine of Rs 50/- will be charged. </li>                                      
-                            </ul>
-                        </div>                            
-                    </div>                        
+                            <div class="player_content" style="background: #F58A43;">
+                                <div class="section_title_container">
+                                    <div class="section_title"><h2 style="color:#060426">&nbsp;&nbsp;Recent News/ Events</h2></div>
+                                </div>                        
+                                <div style="margin-top:2em;">
+                                    <div class="vticker">
+                                        <ul>
+                                        <?php foreach ($news as $item) { ?>                  
+                                            <li>
+                                                <blockquote>
+                                                <b><?php echo $item->SUBJECT;?></b><br> <?php echo $item->NEWS;?>
+                                                <?php if($item->PATH_ATTACH != 'x'){?>
+                                                    <a href="<?php ADMIN___.'_assets_/downloads/sample.png';?>" style="color:#ffff00; font-size: 11px">Click for detail...</a>
+                                                <?php }?>
+                                                </blockquote>
+                                            </li>
+                                        <?php } ?>
+                                        </ul>    
+                                    </div>
+                                    <div style="float:right;">
+                                        <button class="btn btn-danger up"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+                                        <button class="btn btn-danger down"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></button>
+                                        <button class="btn btn-primary toggle"></button>
+                                    </div>  
+                                </div>
+                            </div>                      
                 </div>
             </div>
         </div>

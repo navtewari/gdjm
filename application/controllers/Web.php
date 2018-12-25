@@ -58,6 +58,7 @@ class Web extends CI_Controller {
     function downloads() {        
         $data_['pageName'] = 'Downloads';
         $data_['menu'] = 4;
+        $data_['news'] = $this->mm->get_most_recent_news();
         $data_['downloads'] = $this->mm->getDownloads();
         $this->load->view('templates/header', $data_);
         $this->load->view('templates/menu', $data_);
