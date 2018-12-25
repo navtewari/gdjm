@@ -11,7 +11,7 @@
             <div class="gallery-grid1">
             <?php foreach ($gallery_category as $item) { ?> 
                 <a href="<?php echo site_url('web/gallery_detail/' . $item->CATEG_ID); ?>">
-                    <div class="col-md-4" style="margin-bottom: 1.5em;">               
+                    <div class="col-md-4" style="margin-bottom: 1.5em;">
                         <div class="gallery-grid1 animated wow slideInUp" data-wow-delay=".5s">                                
                                 <img src="<?php echo ADMIN___ . '/_assets_/gallery/' . $item->PHOTO_; ?>" alt=" " class="img-responsive"><br>
                                 <h4 align="center"><?php echo $item->CATEGORY; ?></h4>
