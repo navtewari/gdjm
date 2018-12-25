@@ -12,6 +12,7 @@ class Web extends CI_Controller {
     function index() {        
         $data_['pageName'] = 'Home';
         $data_['menu'] = 1;        
+        $data_['news'] = $this->mm->get_most_recent_news();
         $this->load->view('templates/header', $data_);
         $this->load->view('templates/menu', $data_);
         $this->load->view('templates/banner-index');       

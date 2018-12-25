@@ -21,22 +21,17 @@
                         </div>                        
                         <div style="margin-top:2em;">
                             <div class="vticker">
-                                <ul>                                                   
+                                <ul>
+                                <?php foreach ($news as $item) { ?>                  
                                     <li>
                                         <blockquote>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan dolor id enim lacinia, sed feugiat ex suscipit. Nunc molestie malesuada pellentesque.
+                                        <b><?php echo $item->SUBJECT;?></b><br> <?php echo $item->NEWS;?>
+                                        <?php if($item->PATH_ATTACH != 'x'){?>
+                                                <a href="<?php ADMIN___.'_assets_/downloads/sample.png';?>" style="color:#ffff00; font-size: 11px">Click for detail...</a>
+                                        <?php }?>
                                         </blockquote>
                                     </li>
-                                    <li>
-                                        <blockquote>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan dolor id enim lacinia, sed feugiat ex suscipit. Nunc molestie malesuada pellentesque.
-                                        </blockquote>
-                                    </li>
-                                    <li>
-                                        <blockquote>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan dolor id enim lacinia, sed feugiat ex suscipit. Nunc molestie malesuada pellentesque.
-                                        </blockquote>
-                                    </li>
+                                <?php } ?>
                                 </ul>    
                             </div>
                             <div style="float:right;">
