@@ -1,6 +1,12 @@
 <div class="gallery animated wow zoomIn" data-wow-delay=".5s">
     <div class="container"> 
-        <h3>Our Gallery</h3>
+        <div class="row" style="margin-top:5em;">
+            <div class="col">
+                <div class="section_title_container">
+                    <div class="section_title text-center"><h3>Our Gallery</h3></div>
+                </div>
+            </div>
+        </div>
         <div class="gallery-grids">
             <div class="gallery-grid1">
             <?php foreach ($gallery_category as $item) { ?> 
