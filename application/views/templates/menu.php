@@ -18,7 +18,7 @@
                                     <div>
                                         <ul class="d-flex flex-row align-items-start justify-content-start">
                                             <li class="<?php if($menu==4){echo 'active';}?>"><a href="<?php echo site_url().'/web/downloads';?>">Downloads</a></li>
-                        <li class="<?php if($menu==4){echo 'active';}?>"><a href="<?php echo site_url().'/web/gallery';?>">gallery</a></li>
+                                            <li class="<?php if($menu==5){echo 'active';}?>"><a href="<?php echo site_url().'/web/gallery';?>">gallery</a></li>
                                             <li class="<?php if($menu==6){echo 'active';}?>"><a href="<?php echo site_url().'/web/contact';?>">contact</a></li>
                                         </ul>
                                     </div>
@@ -49,7 +49,7 @@
                         <li class="<?php if($menu==2){echo 'active';}?>"><a href="<?php echo site_url().'/web/about';?>">about</a></li>
                         <li class="<?php if($menu==3){echo 'active';}?>"><a href="<?php echo site_url().'/web/admission';?>">admission</a></li>
                         <li class="<?php if($menu==4){echo 'active';}?>"><a href="<?php echo site_url().'/web/uc';?>">Downloads</a></li>
-                        <li class="<?php if($menu==4){echo 'active';}?>"><a href="<?php echo site_url().'/web/uc';?>">gallery</a></li>
+                        <li class="<?php if($menu==5){echo 'active';}?>"><a href="<?php echo site_url().'/web/gallery';?>">gallery</a></li>
                         <li class="<?php if($menu==6){echo 'active';}?>"><a href="<?php echo site_url().'/web/contact';?>">contact</a></li>
                     </ul>
                 </nav>
