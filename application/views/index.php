@@ -9,7 +9,8 @@
                             <div class="section_title"><h1>Welcome to GDJM</h1></div>                            
                         </div>                        
                         <div style="margin-top:2em;">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan dolor id enim lacinia, sed feugiat ex suscipit. Nunc molestie malesuada pellentesque. Quisque mattis ante ut nisl tristique ornare. Aenean interdum dictum augue, quis egestas erat lacinia in. Proin dictum commodo nulla ut mattis. Pellentesque vel commodo nisi. Donec eget purus eget ex efficitur tristique. Nulla ut mollis justo.</p>
+                            <p align="justify">Our school is situated far from the hustle and bustle of city life, surrounded by the peaceful mountains terrian a really healthy and congenial atmosphere, plans to introduce a new concept and effective technique of education in English medium. </p>
+                            <p align="justify">At our school, we promote a cumulative learning environment that helps in the development of the student's ...</p>
                             <div class="button about_button" style="margin-top: 2em;"><a href="<?php echo site_url('web/about');?>">Read More...</a></div>
                         </div>                        
                     </div>
