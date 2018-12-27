@@ -1,31 +1,43 @@
-<div class="gallery animated wow zoomIn" data-wow-delay=".5s">
-    <div class="container"> 
+<div class="player">
+    <div class="container">
         <div class="row" style="margin-top:5em;">
             <div class="col">
                 <div class="section_title_container">
-                    <div class="section_title text-center"><h3>Our Gallery</h3></div>
+                    <div class="section_title text-center"><h1>Our Gallery</h1></div>
                 </div>
             </div>
         </div>
-        <div class="gallery-grids">
-            <div class="gallery-grid1">
-            <?php foreach ($gallery_category as $item) { ?> 
-                <a href="<?php echo site_url('web/gallery_detail/' . $item->CATEG_ID); ?>">
-                    <div class="col-md-4" style="margin-bottom: 1.5em;">
-                        <div class="gallery-grid1 animated wow slideInUp" data-wow-delay=".5s">                                
-                                <img src="<?php echo ADMIN___ . '/_assets_/gallery/' . $item->PHOTO_; ?>" alt=" " class="img-responsive"><br>
-                                <h4 align="center"><?php echo $item->CATEGORY; ?></h4>
-                                <?php if ($item->DESC != '') { ?>
-                                    <p align="center"><?php echo $item->DESC; ?></p>
-                                <?php } ?>
-                            </div>                                          
-                    </div>
-                </a>
-            <?php } ?>
-            <div class="clearfix"> </div>
+        <div class="row results_row">
+            <div class="col">
+                <div class="results_title_container text-center">
+                    <div class="results_title">GDJM Blossoms</div>                        
+                </div>
+            </div>
         </div>
     </div>
 </div>
-</div>
-<!-- //gallery inner -->
-<!-- footer -->
+
+<div class="news" style="background: #fff;">
+        <div class="container">            
+            <div class="row news_row" style="margin-top:0px !important;">                
+                <!-- News Post -->
+                <?php foreach ($gallery_category as $item) { ?> 
+                    <a href="<?php echo site_url('web/gallery_detail/' . $item->CATEG_ID); ?>">
+                <div class="col-lg-4">
+                    <div class="news_post">
+                        <div class="news_post_image">
+                            <img src="<?php echo ADMIN___ . '/_assets_/gallery/' . $item->PHOTO_; ?>" alt=" " class="img-responsive">
+                        </div>
+                        <div class="news_post_content">                           
+                            <div class="news_post_title"><a href="<?php echo site_url('web/gallery_detail/' . $item->CATEG_ID); ?>"><?php echo $item->CATEGORY; ?></a></div>
+                            <div class="news_post_text">
+                                <p><?php echo $item->DESC; ?></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+                </a>          
+                 <?php } ?> 
+            </div>
+        </div>
+    </div>

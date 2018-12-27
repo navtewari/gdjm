@@ -51,8 +51,8 @@ Copyright &copy;2018 All rights reserved | Developed by <a href="https://teamfre
                                     <li><a href="<?php echo site_url().'/web/about';?>">About</a></li>
                                     <li><a href="<?php echo site_url().'/web/admission';?>">Admissions</a></li>
                                     <li><a href="<?php echo site_url().'/web/uc';?>">Activities</a></li>
-                                    <li><a href="<?php echo site_url().'/web/uc';?>">Downloads</a></li>
-                                    <li><a href="<?php echo site_url().'/web/uc';?>">Gallery</a></li>
+                                    <li><a href="<?php echo site_url().'/web/downloads';?>">Downloads</a></li>
+                                    <li><a href="<?php echo site_url().'/web/gallery';?>">Gallery</a></li>
                                     <li><a href="<?php echo site_url().'/web/contact';?>">Contact</a></li>
                                 </ul>
                             </nav>
@@ -76,6 +76,19 @@ Copyright &copy;2018 All rights reserved | Developed by <a href="https://teamfre
 <script src="<?php echo base_url(). 'assets/plugins/easing/easing.js';?>"></script>
 <script src="<?php echo base_url(). 'assets/plugins/progressbar/progressbar.min.js';?>"></script>
 <script src="<?php echo base_url(). 'assets/plugins/parallax-js-master/parallax.min.js';?>"></script>
+<!-- script -->
+<script src="<?php echo base_url() . 'assets/js/jquery.chocolat.js'; ?>"></script>
+<link rel="stylesheet" href="<?php echo base_url() . 'assets/styles/chocolat.css'; ?>" type="text/css" media="screen" charset="utf-8">
+<!--light-box-files-->
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+        $('.gallery-grid1 a').Chocolat();
+    });
+</script>
+<!-- script -->
+<!-- //gallery inner -->
+<!-- footer -->
+
 <script src="<?PHP echo base_url() . 'assets/js/jquery.easy-ticker.js'; ?>"></script>
 <script src="<?php echo base_url(). 'assets/js/ticker.js';?>"></script>
 <script src="<?php echo base_url(). 'assets/js/custom.js';?>"></script>
