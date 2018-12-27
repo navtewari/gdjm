@@ -60,12 +60,16 @@ class Web extends CI_Controller {
         $data_['menu'] = 4;
         $data_['news'] = $this->mm->get_most_recent_news();
         $data_['downloads'] = $this->mm->getDownloads();
+        if(count($data_['downloads'])!=0){
         $this->load->view('templates/header', $data_);
         $this->load->view('templates/menu', $data_);
         $this->load->view('templates/banner');
 
         $this->load->view('downloads', $data_);
         $this->load->view('templates/footer');
+        } else{
+            redirect('web');
+        }
     }
 
     public function gallery() {
